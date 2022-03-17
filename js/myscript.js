@@ -59,6 +59,10 @@ const app = new Vue ({
             }
         },
 
+        activateImage(index){
+            this.active = index;
+        },
+
         scroll(){
             this.scrollfn = setInterval( () => {
                 this.nextImage();
