@@ -66,14 +66,13 @@ const app = new Vue ({
         scroll(){
             this.scrollfn = setInterval( () => {
                 this.nextImage();
-                console.log("ciao")
+                console.log(this);
             }, this.time);
         },
 
         stopScroll(){
             clearInterval(this.scrollfn);
             this.scrollfn = null;
-            console.warn("hello");
         }
     },
 

@@ -8,6 +8,8 @@ body{
 div.my-carousel-container{
     min-height: 700px;
     min-width:800px;
+    background-color:rgb(247, 247, 247);
+    padding:2rem;
 }
 
 div.my-carousel-images{
