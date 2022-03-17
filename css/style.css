@@ -17,7 +17,7 @@ div.my-carousel-images{
 
 
 .my-carousel-images .my-container-img{
-    /* display: none; */
+    display: none;
 }
 
 .my-carousel-images  img{
@@ -56,6 +56,7 @@ div.my-thumbnails .my-container-img{
 .brightness{
     filter: brightness(.4);
 }
+
 div.my-thumbnails img{
     width:100%;
     min-height: 160px;

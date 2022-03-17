@@ -4,6 +4,8 @@ const app = new Vue ({
 
     data: {
 
+        active: 0,
+
         guzzantiCharacter: [
             {
                 name: "Quelo",
@@ -32,6 +34,28 @@ const app = new Vue ({
             }
         ],
         
+    },
+
+    methods: {
+
+        nextImage(){
+
+            if(this.active === this.guzzantiCharacter.length - 1){
+                this.active = 0;
+            } else{
+                this.active++;
+            }
+            
+        },
+
+        prevImage(){
+
+            if(this.active === 0){
+                this.active = this.guzzantiCharacter.length - 1;
+            } else {
+                this.active--;
+            }
+        }
     },
 
 

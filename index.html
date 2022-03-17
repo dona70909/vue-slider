@@ -36,26 +36,25 @@
                     <div class="my-carousel-container d-flex flex-column px-5" id="my-carousel">
                         <div class="my-carousel-images">
                             <!-- immagini -->
-                            <div class="my-container-img" v-for="(bigImg , index) in guzzantiCharacter">
+                            <div :class="(index == active) ? 'activeElement-big' : 'my-container-img' "  v-for="(bigImg , index) in guzzantiCharacter">
                                 <img :src="bigImg.image" :alt="bigImg.image">
                                 <div class="my-container-quote p-4">
                                     <h2>{{bigImg.name}}</h2>
                                     <p>{{bigImg.quote}}</p>
                                 </div>
                             </div>
-                            
                         </div>
                         <div class="my-thumbnails position-relative">
                             <!-- prev -->
-                            <div class="my-previous position-absolute">
+                            <div  @click="prevImage" class="my-previous position-absolute">
                                 <span class="my-prev-hook"></span>
                             </div>
                             <!-- immagini interne -->
-                            <div class="my-container-img brightness" v-for="(smallImg,index) in guzzantiCharacter">
+                            <div class="my-container-img brightness"  v-for="(smallImg,index) in guzzantiCharacter" :class="(index == active) ? 'activeElement-small' : 'brightness' ">
                                 <img :src="smallImg.image" :alt="smallImg.name">
                             </div>
                             <!-- next -->
-                            <div class="my-next position-absolute">
+                            <div @click="nextImage" class="my-next position-absolute">
                                 <span class="my-next-hook"></span>
                             </div>
                         </div>
