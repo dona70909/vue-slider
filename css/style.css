@@ -1,0 +1,122 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(245, 128, 144);
+}
+
+/* # big images container: mycarousel  container of all : my-carousel-container */
+
+div.my-carousel-container{
+    min-height: 700px;
+    min-width:800px;
+}
+
+div.my-carousel-images{
+    min-height: 540px;
+    padding: 2rem;
+}
+
+
+.my-carousel-images .my-container-img{
+    display: none;
+}
+
+.my-carousel-images  img{
+    width: 100%;
+    min-height: 540px;
+    height: 100%;
+}
+
+.my-container-quote{
+    background-color: rgb(211, 212, 212);
+}
+
+.my-container-quote > p{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.my-container-quote > h2{
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+/* # SMALL IMAGES container thumbnail */
+
+div.my-thumbnails{
+    min-height: 160px;
+    display: flex;
+    padding: 2rem; 
+    background: rgb(32, 32, 32);
+}
+
+div.my-thumbnails .my-container-img{
+    width: calc(100% / 5);
+}
+
+.brightness{
+    filter: brightness(.4);
+}
+div.my-thumbnails img{
+    width:100%;
+    min-height: 160px;
+    height: 100%;
+    padding: .1rem;
+}
+
+div.my-previous,
+div.my-next{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, .5);
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+div.my-previous{
+    left: 3.5rem;
+}
+
+div.my-next{
+    right: 3.5rem;
+}
+
+div.my-previous > span::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0a5";
+    line-height: 30px;
+    cursor: pointer;
+}
+
+div.my-next > span::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0a4";
+    line-height: 30px;
+    cursor: pointer;
+}
+
+
+
+/* # Active class */
+.activeElement-big{
+    display:inline-block;
+}
+
+.activeElement-small{
+    display: inline-block;
+    filter:brightness(1);
+    border: 3px rgb(197, 197, 197) solid;
+}
+
+#my-after-carousel{
+    background-color: transparent;
+}
+
+#my-btn-pause{
+    margin-right: .5rem;
+}
