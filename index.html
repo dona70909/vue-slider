@@ -36,7 +36,7 @@
                     <div class="my-carousel-container d-flex flex-column px-5" id="my-carousel">
                         <div class="my-carousel-images">
                             <!-- immagini -->
-                            <div class="my-container-img" v-for=" (bigImg,index) in guzzantiCharacter">
+                            <div class="my-container-img" v-for="(bigImg , index) in guzzantiCharacter">
                                 <img :src="bigImg.image" :alt="bigImg.image">
                                 <div class="my-container-quote p-4">
                                     <h2>{{bigImg.name}}</h2>
@@ -52,7 +52,7 @@
                             </div>
                             <!-- immagini interne -->
                             <div class="my-container-img brightness" v-for="(smallImg,index) in guzzantiCharacter">
-                                <img :src="smallImg.img" :alt="smallImg.name">
+                                <img :src="smallImg.image" :alt="smallImg.name">
                             </div>
                             <!-- next -->
                             <div class="my-next position-absolute">

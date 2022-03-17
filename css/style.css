@@ -17,7 +17,7 @@ div.my-carousel-images{
 
 
 .my-carousel-images .my-container-img{
-    display: none;
+    /* display: none; */
 }
 
 .my-carousel-images  img{

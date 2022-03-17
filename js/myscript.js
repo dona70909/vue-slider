@@ -30,7 +30,7 @@ const app = new Vue ({
                 quote:"'A noi ce interessa la vita dar concepimento alla nascita: già dopo un quarto d'ora nun gliene frega più niente a nessuno. Prova te a cercà un asilo nido.'",
                 image: "https://cdn-static.dagospia.com/img/foto/03-2018/corrado-guzzanti-padre-pizzarro-993536.jpg",
             }
-        ]
+        ],
         
     },
 
