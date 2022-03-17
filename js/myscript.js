@@ -73,8 +73,26 @@ const app = new Vue ({
         stopScroll(){
             clearInterval(this.scrollfn);
             this.scrollfn = null;
+        },
+
+        handleKeydown(event){
+
+            if(event.keyCode == 37){
+                this.prevImage();
+            } else if(event.keyCode == 39){
+                this.nextImage();
+            }
+
         }
     },
+
+    beforeMount() {
+        window.addEventListener("keydown",this.handleKeydown,null);
+    },
+
+    beforeDestroy() {
+        window.addEventListener("keydown",this.handleKeydown);
+    }
 
 
 });
