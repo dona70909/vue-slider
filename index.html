@@ -29,7 +29,7 @@
         <div class="container-fluid p-5">
             <div class="row text-center">     
                 <div class="col-12 p-5">
-                    <div class="my-carousel-container d-flex flex-column px-5" @mouseenter="scroll" @mouseleave="stopScroll" id="my-carousel" >
+                    <div class="my-carousel-container d-flex flex-column px-5"  id="my-carousel" >
                         <div class="my-carousel-images">
                             <!-- immagini -->
                             <div :class="(index == active) ? 'activeElement-big' : 'my-container-img' "  v-for="(bigImg , index) in guzzantiCharacter">

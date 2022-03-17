@@ -75,6 +75,14 @@ const app = new Vue ({
             this.scrollfn = null;
         },
 
+        /** %
+         * % funzione verifica event keydown = keydown.left(keycode = 37) and keydown.right(keycode = 39)
+         * % l'evento viene preso dalla window
+         * & l'evento (press keydown.left or keydown.right)
+         * % prima del caricamento viene inserito (compilazione)
+         * % prima della chiusura della pagina viene rimosso o meglio prima di un nuovo caricamento? 
+         *  
+         * */ 
         handleKeydown(event){
 
             if(event.keyCode == 37){
