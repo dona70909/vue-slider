@@ -5,6 +5,8 @@ const app = new Vue ({
     data: {
 
         active: 0,
+        scrollfn: null,
+        time: 3000,
 
         guzzantiCharacter: [
             {
@@ -55,6 +57,21 @@ const app = new Vue ({
             } else {
                 this.active--;
             }
+        },
+
+        activateImage(index){
+            this.active = index;
+        },
+
+        scroll(){
+            this.scrollfn = setInterval( () => {
+                this.nextImage();
+            }, this.time);
+        },
+
+        stopScroll(){
+            clearInterval(this.scrollfn);
+            this.scrollfn = null;
         }
     },
 
